@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <button class="calculator__back" onclick="back()">←</button>
+        <input type="text" dir="rtl" class="input" name="textview" readonly>
+        <div class="calculator__wrap">
+            <button class="calculator__button" id="plus" onclick="insert('+')">+</button>
+            <button class="calculator__button" id="minus" onclick="insert('-')">-</button>
+            <button class="calculator__button" id="divide" onclick="insert('/')">÷</button>
+            <button class="calculator__button" id="times" onclick="insert('*')">×</button>
+            <button class="calculator__button" onclick="insert('1')">1</button>
+            <button class="calculator__button" onclick="insert('2')">2</button>
+            <button class="calculator__button" onclick="insert('3')">3</button>
+            <button class="calculator__button"></button>
+            <button class="calculator__button" onclick="insert('4')">4</button>
+            <button class="calculator__button" onclick="insert('5')">5</button>
+            <button class="calculator__button" onclick="insert('6')">6</button>
+            <button class="calculator__button" onclick="equal()"></button>
+            <button class="calculator__button" onclick="insert('7')">7</button>
+            <button class="calculator__button" onclick="insert('8')">8</button>
+            <button class="calculator__button" onclick="insert('9')">9</button>
+            <button class="calculator__button" onclick="equal()"></button>
+            <button class="calculator__button" onclick="insert('0')">0</button>
+            <button class="calculator__button" onclick="insert('.')">.</button>
+            <button class="calculator__button" onclick="clean()">AC</button>
+            <button class="calculator__button" onclick="equal()"></button>
+            <button class="calculator__button" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
